@@ -47,6 +47,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  justify-content: space-between;
+}
+.page-nav {
+  display: flex;
+}
+.page-nav ul,
+.contacts-links ul {
+  display: flex;
 }
 .logo-link {
   font-family: "Raleway", sans-serif;
