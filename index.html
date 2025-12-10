@@ -11,43 +11,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      rel="shortcut icon"
-      href="./images/icons/logo.svg"
-      type="image/svg+xml"
-    />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="page-nav">
           <a href="./index.html" class="logo header-logo"
             >Web<span class="dark-logo">Studio</span></a
           >
           <ul class="nav-list">
-            <li><a href="./index.html" class="nav-links">Studio</a></li>
-            <li><a href="" class="nav-links">Portfolio</a></li>
-            <li><a href="" class="nav-links">Contacts</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-links">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-links">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-links">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <address class="contacts-links">
-          <ul>
+        <address class="contacts">
+          <ul class="contacts-list">
             <li class="contacts-item">
-              <a href="mailto:info@devstudio.com" class="list-item"
+              <a href="mailto:info@devstudio.com" class="contacts-link"
                 >info@devstudio.com</a
               >
             </li>
             <li class="contacts-item">
-              <a href="tel:+110001111111" class="list-item"
+              <a href="tel:+110001111111" class="contacts-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -57,37 +56,37 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
           <button class="btn" type="button">Order Service</button>
         </div>
       </section>
       <section class="features-section">
-        <div class="container">
+        <div class="container features-container">
           <h2 class="visually-hidden">Features</h2>
-          <ul>
-            <li>
+          <ul class="features-list">
+            <li class="features-item">
               <h3 class="features-title">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="features-title">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="features-title">Diligence</h3>
               <p class="text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="features-title">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
@@ -98,57 +97,65 @@
         </div>
       </section>
       <section class="team-section">
-        <div class="container">
-          <h2 class="section-title">Our Team</h2>
-          <ul>
-            <li class="team-list-item">
+        <div class="container team-container">
+          <h2 class="section-title section-team-title">Our Team</h2>
+          <ul class="team-list">
+            <li class="team-item">
               <img
                 src="./images/mark-guerrero.jpg"
                 alt="Product Designer"
                 width="264"
                 height="260"
               />
-              <h3 class="team-title">Mark Guerrero</h3>
-              <p class="text">Product Designer</p>
+              <div class="card-content">
+                <h3 class="team-title">Mark Guerrero</h3>
+                <p class="text">Product Designer</p>
+              </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-item">
               <img
                 src="./images/tom-ford.jpg"
                 alt="Frontend Developer"
                 width="264"
                 height="260"
               />
-              <h3 class="team-title">Tom Ford</h3>
-              <p class="text">Frontend Developer</p>
+              <div class="card-content">
+                <h3 class="team-title">Tom Ford</h3>
+                <p class="text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-item">
               <img
                 src="./images/camila-garcia.jpg"
                 alt="Marketing"
                 width="264"
                 height="260"
               />
-              <h3 class="team-title">Camila Garcia</h3>
-              <p class="text">Marketing</p>
+              <div class="card-content">
+                <h3 class="team-title">Camila Garcia</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
-            <li class="team-list-item">
+            <li class="team-item">
               <img
                 src="./images/daniel-wilson.jpg"
                 alt="UI Designer"
                 width="264"
                 height="260"
               />
-              <h3 class="team-title">Daniel Wilson</h3>
-              <p class="text">UI Designer</p>
+              <div class="card-content">
+                <h3 class="team-title">Daniel Wilson</h3>
+                <p class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="portfolio-section">
-        <div class="container">
-          <h2 class="section-title">Our Portfolio</h2>
-          <ul>
-            <li>
+        <div class="container portfolio-container">
+          <h2 class="section-title section-portfolio-title">Our Portfolio</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
               <img
                 src="./images/banking-app.jpg"
                 alt="Banking App"
@@ -158,7 +165,7 @@
               <h3 class="portfolio-title">Banking App</h3>
               <p class="text">App</p>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/cashless-payment.jpg"
                 alt="Cashless Payment"
@@ -178,7 +185,7 @@
               <h3 class="portfolio-title">Meditation App</h3>
               <p class="text">App</p>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/taxi-service.jpg"
                 alt="Taxi Service"
@@ -188,7 +195,7 @@
               <h3 class="portfolio-title">Taxi Service</h3>
               <p class="text">Marketing</p>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/screen-illustrations.jpg"
                 alt="Screen Illustrations"
@@ -198,7 +205,7 @@
               <h3 class="portfolio-title">Screen Illustrations</h3>
               <p class="text">Design</p>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/online-courses.jpg"
                 alt="Online Courses"
