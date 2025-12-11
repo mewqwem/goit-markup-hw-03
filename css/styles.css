@@ -295,6 +295,7 @@ p {
 .portfolio-content {
   border: 1px solid #e7e9fc;
   border-top: transparent;
+  padding: 32px 16px;
 }
 /* #endregion */
 /* #region Footer styles */
