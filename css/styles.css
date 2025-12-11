@@ -93,8 +93,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  width: 169px;
-  height: 56px;
+  min-width: 169px;
+  min-height: 56px;
   font-size: 16px;
   border: none;
   font-family: roboto, sans-serif;
@@ -156,6 +156,7 @@ p {
 .page-nav {
   display: flex;
   flex-grow: 1;
+  align-items: center;
 }
 .header-logo {
   margin-right: 76px;
@@ -183,9 +184,9 @@ p {
 }
 .contacts-list {
   display: flex;
+  gap: 40px;
 }
 .contacts-item {
-  margin-right: 40px;
   padding: 24px 0;
 }
 .contacts-link {
@@ -199,7 +200,7 @@ p {
 /* #region Hero section styles */
 .hero {
   background-color: #2e2f42;
-  padding: 188px;
+  padding: 188px 0;
 }
 .hero-container {
   display: flex;
@@ -268,7 +269,7 @@ p {
   margin-bottom: 8px;
 }
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 /* #endregion */
 /* #region Portfolio section styles */
@@ -300,17 +301,14 @@ p {
 .page-footer {
   background-color: #2e2f42;
   color: #f4f4fd;
-  padding: 120px 0;
-}
-.footer-container {
-}
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 264px;
+  padding: 100px 0;
 }
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   padding: 0;
+}
+.footer-text {
+  max-width: 264px;
 }
 /* #endregion */
