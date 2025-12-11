@@ -59,7 +59,15 @@ p {
 }
 /* #endregion */
 /* #region Common styles */
-
+.section-title {
+  font-size: 36px;
+  color: #2e2f42;
+  margin-bottom: 72px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -71,10 +79,6 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.section-title {
-  font-size: 36px;
-  color: #2e2f42;
 }
 .light-logo {
   color: #f4f4fd;
@@ -121,8 +125,21 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.section {
+  padding: 120px 0;
+}
 .text {
   letter-spacing: 0.02em;
+}
+/* #endregion */
+/* #region Card-set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent-x) var(--indent-y);
+}
+.card-set-item {
+  width: calc((100% - var(--indent-y) * (var(--items) - 1)) / var(--items));
 }
 /* #endregion */
 /* #region Header styles */
@@ -135,30 +152,24 @@ p {
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
 }
 .page-nav {
   display: flex;
+  flex-grow: 1;
 }
 .header-logo {
   margin-right: 76px;
 }
 .nav-list {
   display: flex;
-  gap: 40px; /* або через gap */
+  gap: 40px; /* або через gap або через псевдоклас lastchild */
 }
-/* можна робити через псевдо клас відступи
- .nav-item:not(:last-child) {
-  margin-right: 40px;
-} 
-*/
-
 .nav-links {
+  display: block;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
-  display: block;
 }
 .nav-links:hover,
 .nav-links:focus {
@@ -186,7 +197,7 @@ p {
 }
 /* #endregion */
 /* #region Hero section styles */
-.hero-section {
+.hero {
   background-color: #2e2f42;
   padding: 188px;
 }
@@ -208,8 +219,7 @@ p {
 }
 /* #endregion */
 /* #region Features section styles */
-.features-section {
-  padding: 172px 0;
+.features {
 }
 .features-title {
   margin-bottom: 8px;
@@ -218,7 +228,11 @@ p {
 }
 .features-list {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
+  --item: 3;
+  --indent-x: 24px;
+  --indent-y: 24px;
 }
 .features-item {
   min-width: 264px;
@@ -228,17 +242,13 @@ p {
 }
 /* #endregion */
 /* #region Team section styles */
-.team-section {
+.team {
   background-color: #f4f4fd;
-  padding: 120px 0;
 }
 .team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.section-team-title {
-  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -262,36 +272,45 @@ p {
 }
 /* #endregion */
 /* #region Portfolio section styles */
-.portfolio-section {
+.portfolio {
 }
 .portfolio-container {
-}
-.section-portfolio-title {
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
 }
 .portfolio-title {
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  width: calc((100% - 96px) / 3);
+  flex-wrap: wrap;
+  --items: 3;
+  --indent-y: 24px;
+  --indent-x: 48px;
 }
 .portfolio-item {
+}
+.portfolio-content {
+  border: 1px solid #e7e9fc;
+  border-top: transparent;
 }
 /* #endregion */
 /* #region Footer styles */
 .page-footer {
   background-color: #2e2f42;
   color: #f4f4fd;
+  padding: 120px 0;
 }
-.logo {
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+.footer-container {
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 264px;
+}
+.footer-logo {
+  padding: 0;
 }
 /* #endregion */
